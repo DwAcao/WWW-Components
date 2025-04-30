@@ -1,0 +1,134 @@
+:root{
+    --colorVar-Blk-: black;
+    --colorVar-red-: red;
+    --colorVar-oj-: orange;
+    --colorVar-yelo-: yellow;
+    --colorVar-blu-: blue;
+    --colorVar-grn-: green;
+    --colorVar-ingo-: indigo;
+    --colorVar-vio-: violet;
+    --colorVar-Wht-: white;
+    --colorVar-Gry-: gray;
+    --colorVar-Background-: rgb(7, 22, 107);
+}
+
+/* General Reset */
+body {
+    margin: 0;
+    /* Remove default margin */
+    background-image: url('WH40k.jpeg');
+    /* Replace 'your-image.jpg' with your image path */
+    background-size: cover;
+    /* Scale the image to cover the entire container */
+    background-position: center center;
+    /* Center the image both horizontally and vertically */
+    background-repeat: no-repeat;
+    /* Prevent the image from repeating */
+    background-attachment: fixed;
+    /* Optional: Keep the background fixed when scrolling */
+    height: 100vh;
+    /* Ensure the body fills the viewport height */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--colorVar-Wht-);
+}
+
+/* Business Card Container */
+.business-card {
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+    position: relative;
+}
+
+.card-side {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 174, 255, 1.2);
+    transition: transform 0.9s;
+    border: 2px solid transparent;
+}
+
+.business-card:hover .card-side {
+    animation: glowing 2.5s infinite;
+}
+
+@keyframes glowing {
+    0% {
+        border-color: var(--colorVar-red-);
+        box-shadow: 0 0 5px var(--colorVar-grn-);
+    }
+
+    50% {
+        border-color:var(--colorVar-yelo-);
+        box-shadow: 0 0 20px var(--colorVar-blu-);
+    }
+
+    100% {
+        border-color: var(--colorVar-ingo-);
+        box-shadow: 0 0 5px var(--colorVar-vio-);
+    }
+}
+
+.business-card:hover .front {
+    transform: rotateY(180deg);
+}
+
+.business-card:hover .back {
+    transform: rotateY(0deg);
+}
+
+/* Front Side with Gradient Background */
+.front {
+    background-image: linear-gradient(to right, var(--colorVar-ingo-), var(--colorVar-blu-), var(--colorVar-grn-)); /* Example gradient */
+    background-color: var(--colorVar-Wht-);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px; /* Ensures the gradient matches the card's rounded edges */
+}
+
+/* Back Side with Gradient Background */
+.back {
+    background-image: linear-gradient(to bottom right, var(--colorVar-red-), var(--colorVar-oj-)); /* Another example gradient */
+    color: var(--colorVar-Wht-);
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px; /* Matches the rounded edges */
+}
+
+.profile-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.name {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.title {
+    font-size: 1em;
+    color: var(--colorVar-Blk-);
+}
+
+.bio,
+.contact {
+    margin: 5px 0;
+    color: var(--colorVar-Blk-);
+}
