@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="style.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+		rel="stylesheet">
+
+	<title>Alec C's Blog</title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+		integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+	<header> <!-- START OF NEW ADDED, https://www.youtube.com/watch?v=GdrbE-s5DgQ-->
+		<div class="navbarNew">
+			<div class="logo"><a href="https://www.youtube.com/watch?v=GdrbE-s5DgQ" target="_blank">Web Dev Creative</a>
+			</div>
+			<ul class="links">
+				<li><a href="/ECommerce Proj/index.html" target="_blank">E-Commerce Project Design</a></li>
+				<li><a href="/Movie Landing Page Project/index.html" target="_blank">Movie Landing Project Design</a></li>
+				<li><a href="/Image Slider Project/index.html" target="_blank">Image Slider Project Design</a></li>
+				<li><a href="/Business Card stylish/index.html" target="_blank">Business Card Contact Design</a></li>
+			</ul>
+			<a href="#" class="action_btn">Get Started</a>
+			<div class="toggle_btn">
+				<i class="fa-solid fa-bars"></i>
+			</div>
+		</div>
+
+		<div class="dropdown_menu">
+			<li><a href="hero">Home</a></li>
+			<li><a href="about">About</a></li>
+			<li><a href="services">Services</a></li>
+			<li><a href="contact">Contact</a></li>
+			<li><a href="#" class="action_btn">Get Started</a></li>
+		</div>
+	</header>
+
+	<script>
+		const toggle_btn = document.querySelector('.toggle_btn')
+		const toggleBtnIcon = document.querySelector('.toggle_btn i')
+		const dropDownMenu = document.querySelector('.dropdown_menu')
+
+		toggleBtn.onclick = function () {
+			dropDownMenu.classList.toggle('open')
+			const isOpen = dropDownMenu.classList.contains('open')
+
+			toggleBtnIcon.classList = isOpen
+				? 'fa-solid fa-xmark'
+				: 'fa-solid fa-bars'
+		}
+	</script> <!--END OF ADDed, https://www.youtube.com/watch?v=GdrbE-s5DgQ -->
+
+	<div class="image-container">
+		<img src="/images/Me.jpg" alt="Profile Picture" class="profile-image" />
+	</div>
+	<h1>Game & Grub: A Blog for the Curious Gamer! <br /></h1>
+	<p>
+		Hello! My name is <strong>Alex</strong>. This blog is about anything and everything I
+		like or want to talk about. From my <strong>favorite video games</strong> and the <strong>latest
+			tech news</strong> to <strong>delicious food experiences</strong> and <strong>insights about
+			nature</strong>, I aim
+		to share my hobbies and experiences with you. Join me on this journey as we explore a
+		variety of topics that inspire curiosity and spark conversation!<br />
+	</p>
+
+	<nav class="navbar">
+		<ul>
+			<li><a href="index.html" target="">Home</a></li>
+			<li><a href="/images/Present Resume.png" target="_blank">About</a></li>
+			<li><a href="registrationform.html" target="_blank">Registration Form</a></li>
+			<li><a href="https://www.youtube.com/watch?v=fTRfPp1ngYA" target="_blank">My Youtube Channel</a></li>
+			<li><a href="businesscard.html" target="_blank">Contact</a></li>
+			<li><a href="faq.html" target="_blank">FAQ</a></li>
+		</ul>
+	</nav> <br>
+
+	<div class="image-container">
+		<img src="/images/Deliciousfood.png" alt="Image of food" class="box-image" />
+		<img src="/images/BloodBorne Old Hunters.png" alt="Bloodborne video game" class="profile-image" />
+		<img src="/images/IMG_0190.JPEG" alt="Image of Deers - Yosemiti trip" class="box-image" />
+		<img src="/images/Castlevania.png" alt="Castlevania video game" class="profile-image" />
+		<img src="/images/WorldNews.png" alt="Image of World News" class="box-image" />
+	</div>
+
+	<h2>Fun Facts About Me <br /></h2>
+	<div class="centered-list">
+		<ol>
+			<li><strong>I Love playing video games ranging from Castlevania: SotN, Bloodborne, Elden Ring (Dark
+					Souls Series),
+					Starcraft Series, or Warcraft series.</strong></li>
+			<li><strong>My favorite foods are hamburgers, pho, and chili cheese fries (or any variation).</strong>
+			</li>
+			<li><strong>I enjoy looking into video game companies, tech news, world news,
+					and nature.</strong></li>
+			<li><strong>Passionate about the 2nd Amendment and self defense, I believe in responsible ownership and
+					saftey.</strong></li>
+			<li><strong>Interested in how history of past events shape our present and future.</strong></li>
+			<li><strong>I find social and behavioral science intriguing, helps us understand why people make certain
+					decisions and how we can improve our interactions.</strong></li>
+			<li><strong>I am fascinated by the intersection of technology and society, exploring how innovations
+					impact our
+					daily lives and global communities.</strong></li>
+		</ol>
+	</div>
+
+	<h2>My First Blog Post</h2>
+	<p>
+		Today, I want to talk about video games. It's a hobby I truly enjoy and
+		find incredibly effective for stress relief. Recent studies have shown
+		that gaming can be a powerful tool for managing stress and improving
+		mental well-being. According to a survey of nearly <strong>13,000 players across
+			12 countries, 71% reported</strong> that <strong>video games serve as a stress reliever.</strong>
+		This isn't surprising, as gaming can create a state of flow similar to
+		meditation, helping us detach from daily worries. Video games offer more
+		than just escapism. <strong>They can build resilience, enhance problem-solving
+			skills, and even boost creativity.</strong> For instance, games like Minecraft
+		allow for unlimited creative expression, which can be therapeutic.
+		Moreover, multiplayer games foster social connections, providing a
+		support network that can help build stress resilience. <br />
+		Stay tuned for more posts as we explore the fascinating world of gaming
+		and its impacts on our well-being! <br />
+		<strong>Sources:</strong><br />
+		1. <a href="https://unric.org/en/video-games-and-mental-health-a-surprising-ally/"
+			target="_blank"><strong>unric.org: video
+				games and mental health a surprising ally</strong></a>
+		<br />
+		2. <a href="https://gamequitters.com/do-video-games-reduce-stress/" target="_blank"><strong>gamequitters.com:
+				do video games reduce stress</strong></a>
+		<br />
+	</p>
+
+	<h3>Check out this video!</h3>
+	<p>
+		This video discusses an obstacle in PlayStation's plans. It provides
+		insight into the challenges faced by one of the gaming industry's
+		giants. The video likely explores how this obstacle might affect
+		PlayStation's strategy, potentially impacting game releases, console
+		development, or other aspects of their business. For gamers and industry
+		enthusiasts, understanding these challenges can offer valuable context
+		about the future of gaming and the competitive landscape of the console
+		market. While obstacles can be concerning, they often lead to innovation
+		and improvement, so this development could ultimately benefit players in
+		unexpected ways.
+	</p>
+
+	<div class="video-container">
+		<iframe width="550" height="320" src="https://www.youtube.com/embed/1alNU8koGPw?si=eMPb48H2AWbZWDWX"
+			frameborder="0" allowfullscreen></iframe>
+	</div>
+
+	<footer>
+		<p>
+			Contact me at:
+			<a href="mailto:acao4@toromail.csudh.edu" target="_blank">acao4@toromail.csudh.edu</a>
+			<br />
+			Follow me at:
+			<a href="https://X.com/DreamwreckAC" target="_blank">Twitter/X@DreamwreckAC</a>
+			<br />
+		</p>
+	</footer>
+</body>
+
+</html>

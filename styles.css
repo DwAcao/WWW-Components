@@ -1,0 +1,538 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "IBM Plex Serif", serif;
+	box-sizing: border-box;
+}
+
+:root {
+	/* Example primary color */
+	--primary-color: #054671;
+	/* Example secondary color */
+	--secondary-color: #1aaf31;
+	/* Example background color */
+	--background-color: #28acb3;
+	/* Example text color */
+	--text-color: white;
+	/* Changed to white */
+	/* Example link hover color */
+	--link-hover-color: #3498db;
+	/* Example border color */
+	--border-color: rgb(0, 0, 0);
+	/* Example footer text color */
+	--footer-text-color: royalblue;
+	--anotherB-color: black;
+	/* Rainbow spectrum of colors rgb */
+	--rainbowR-color: red;
+	--rainbowG-color: green;
+	--rainbowO-color: orange;
+	--rainbowY-color: yellow;
+	--rainbowB-color: blue;
+	--rainbowI-color: indigo;
+	--rainbowV-color: violet;
+}
+
+.ibm-plex-serif-thin {
+	font-family: "IBM Plex Serif", serif;
+	font-weight: 100;
+	font-style: normal;
+}
+
+.ibm-plex-serif-extralight {
+	font-family: "IBM Plex Serif", serif;
+	font-weight: 200;
+	font-style: normal;
+}
+
+.ibm-plex-serif-light {
+	font-family: "IBM Plex Serif", serif;
+	font-weight: 300;
+	font-style: normal;
+}
+
+.ibm-plex-serif-regular {
+	font-family: "IBM Plex Serif", serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.ibm-plex-serif-medium {
+	font-family: "IBM Plex Serif", serif;
+	font-weight: 500;
+	font-style: normal;
+}
+
+.ibm-plex-serif-semibold {
+	font-family: "IBM Plex Serif", serif;
+	font-weight: 600;
+	font-style: normal;
+}
+
+.ibm-plex-serif-bold {
+	font-family: "IBM Plex Serif", serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+.ibm-plex-serif-thin-italic {
+	font-family: "IBM Plex Serif", serif;
+	font-weight: 100;
+	font-style: italic;
+}
+
+.ibm-plex-serif-extralight-italic {
+	font-family: "IBM Plex Serif", serif;
+	font-weight: 200;
+	font-style: italic;
+}
+
+.ibm-plex-serif-light-italic {
+	font-family: "IBM Plex Serif", serif;
+	font-weight: 300;
+	font-style: italic;
+}
+
+.ibm-plex-serif-regular-italic {
+	font-family: "IBM Plex Serif", serif;
+	font-weight: 400;
+	font-style: italic;
+}
+
+.ibm-plex-serif-medium-italic {
+	font-family: "IBM Plex Serif", serif;
+	font-weight: 500;
+	font-style: italic;
+}
+
+.ibm-plex-serif-semibold-italic {
+	font-family: "IBM Plex Serif", serif;
+	font-weight: 600;
+	font-style: italic;
+}
+
+.ibm-plex-serif-bold-italic {
+	font-family: "IBM Plex Serif", serif;
+	font-weight: 700;
+	font-style: italic;
+}
+
+body {
+	background-image: url("WH40k.jpeg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	font-family: "IBM Plex Serif", serif;
+	background-color: var(--background-color);
+	height: 100vh;
+	margin: 0;
+	padding: 20px;
+	text-align: center;
+	/* Centers inline content */
+	color: var(--text-color);
+	/* Added to ensure default text is white */
+}
+
+main {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+/* Heading styles */
+h1 {
+	font-size: 36px; /* Adjust this value as needed */
+	background: linear-gradient(to right, var(--primary-color), #000000);
+	color: var(--secondary-color);
+	padding: 20px;
+	width: 70%;
+	margin: 0 auto;
+	/* Center the h1 */
+	border: 4px solid var(--secondary-color);
+	display: block;
+	/* Change to block */
+	text-align: center;
+	/* Center the text within */
+	box-shadow: 0px 4px 6px rgba(9, 255, 0, 2.5);
+	font-family: "IBM Plex Serif", serif;
+}
+
+h2,
+h3 {
+	background: linear-gradient(to right, var(--primary-color), #000000);
+	font-size: 36px; /* Adjust this value as needed */
+	color: var(--secondary-color);
+	padding: 20px;
+	width: 70%;
+	margin: 0 auto;
+	/* Center the h2 and h3 */
+	border: 4px solid var(--secondary-color);
+	display: block;
+	/* Change to block */
+	text-align: center;
+	/* Center the text within */
+	box-shadow: 0px 4px 6px rgba(9, 255, 0, 2.5);
+	font-family: "IBM Plex Serif", serif;
+}
+
+.form-group {
+	margin-bottom: 15px;
+}
+
+.navbar ul {
+	font-family: "IBM Plex Serif", serif;
+	border-style: solid;
+	list-style-type: none;
+	background-color: var(--text-color);
+	overflow: hidden;
+}
+
+.navbar a {
+	font-family: "IBM Plex Serif", serif;
+	color: var(--secondary-color);
+	text-decoration: none;
+	padding: 15px;
+	display: block;
+	text-align: center;
+}
+
+.navbar a:hover {
+	background-color: gray;
+}
+
+.navbar li {
+	font-family: "IBM Plex Serif", serif;
+	float: left;
+}
+
+nav {
+	font-family: "IBM Plex Serif", serif;
+	padding: 10px;
+	width: 75%;
+	display: inline-block;
+	/* Changed from inline-flex */
+	text-align: center;
+	/* Center the nav */
+}
+
+nav ul {
+	font-family: "IBM Plex Serif", serif;
+	list-style-type: none;
+	margin: 0 auto;
+	/* Center the ul */
+	padding: 0;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 75%;
+	backdrop-filter: blur(10px);
+	box-shadow: 0px 4px 6px rgba(9, 255, 0, 2.5);
+}
+
+nav ul li a {
+	color: #fff;
+	font-family: "IBM Plex Serif", serif;
+	margin: 0;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+nav ul li a:hover {
+	color: var(--link-hover-color);
+}
+
+/* Profile image styles */
+.profile-image {
+	display: block;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	object-fit: cover;
+	margin: 20px auto;
+	box-shadow: 0px 4px 6px rgba(9, 255, 0, 2.5);
+}
+
+/* Container styles for horizontal alignment */
+.image-container {
+	display: flex;
+	justify-content: center;
+	/* Aligns images horizontally in the center */
+	gap: 0;
+	/* Adds spacing between images */
+}
+
+/* Box image styles (square or rectangular images with rounded corners) */
+.box-image {
+	display: block;
+	width: 250px;
+	/* Set width for box images */
+	height: auto;
+	/* Maintain aspect ratio */
+	border-radius: 75px;
+	/* Rounded edges for box images */
+	object-fit: cover;
+	margin: 20px auto;
+	box-shadow: 0px 4px 6px rgba(9, 255, 0, 2.5);
+}
+
+/* Container styles for box images */
+.box-image-container {
+	display: flex;
+	justify-content: center;
+	/* Aligns images horizontally in the center */
+	gap: 20px;
+	/* Adds spacing between images */
+}
+
+/* Table styles */
+table {
+	width: 75%;
+	/* Adjust as needed */
+	margin: 20px auto;
+	/* Center the table horizontally */
+	border-collapse: collapse;
+	/* Optional: For controlling borders */
+	border-style: solid;
+	border-color: var(--secondary-color);
+	box-shadow: 0px 4px 6px rgba(9, 255, 0, 2.5);
+}
+
+th,
+td {
+	padding: 8px;
+	text-align: left;
+	/* Or 'center' if you want to center the text in cells */
+	border-bottom: 1px solid #ddd;
+	/* Optional: Add borders between rows */
+}
+
+/* Row styles */
+tr {
+	background-color: var(--text-color);
+	color: var(--secondary-color);
+	font-size: 24px;
+	text-wrap: balance;
+}
+
+/* Paragraph, summary, label styles */
+p,
+summary,
+label,
+details {
+	font-family: "IBM Plex Serif", serif;
+	padding: 0px;
+	margin: 0px;
+	background-color: rgba(0, 0, 0, 0.08);
+	color: var(--text-color);
+	/* Changed to white */
+	font-size: 24px;
+	text-wrap: balance;
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	box-shadow: 0px 4px 6px rgba(9, 255, 0, 0.09);
+}
+
+/* Ordered/unordered list styles */
+ol,
+ul {
+	font-family: "IBM Plex Serif", serif;
+	color: var(--text-color);
+	/* Changed to white */
+	list-style-position: inside;
+	padding: 10px;
+	box-shadow: 0px 4px 6px rgba(9, 255, 0, 0.09);
+}
+
+/* Footer styles */
+footer {
+	background-color: var(--text-color);
+	padding: 10px;
+	width: 30%;
+	border: 4px solid var(--secondary-color);
+	display: inline-block;
+	text-align: center;
+	/* center the text */
+	margin: 0 auto;
+	/* Center the footer */
+	box-shadow: 0px 4px 6px rgba(9, 255, 0, 2.5);
+}
+
+footer * {
+	color: var(--footer-text-color);
+}
+
+/* Styles specifically for the registration form */
+#registration-form input[type="text"],
+#registration-form input[type="email"],
+#registration-form input[type="password"],
+#registration-form select {
+	background-color: rgba(255, 255, 255, 0.7);
+	/* Semi-transparent white */
+	color: black;
+	width: 75%;
+	padding: 10px;
+	/* Optional: Force text to be black */
+	font-size: 24px; /* Adjust this value as needed */
+}
+
+#registration-form label {
+	background-color: rgba(255, 255, 255, 0.7);
+	/* Semi-transparent white */
+	color: black;
+	/* Optional: Force text to be black */
+	padding: 2px;
+	/* Add some padding to the label for better visibility */
+}
+
+/* Inputs and buttons */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+	font-family: "IBM Plex Serif", serif;
+	width: 25%;
+	padding: 8px;
+	border: 3px solid #991818;
+	border-radius: 4px;
+	box-sizing: border-box;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.9);
+	color: white;
+	/* Ensure input text is white */
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+	font-family: "IBM Plex Serif", serif;
+	margin-right: 5px;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.9);
+}
+
+input[type="submit"] {
+	font-family: "IBM Plex Serif", serif;
+	background-color: #4CAF50;
+	color: rgb(0, 0, 0);
+	padding: 10px 15px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 24px;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.9);
+}
+
+input[type="submit"]:hover {
+	font-family: "IBM Plex Serif", serif;
+	background-color: #ffffff;
+}
+
+input:focus,
+select:focus {
+	font-family: "IBM Plex Serif", serif;
+	outline: none;
+	border-color: #4CAF50;
+}
+
+/* All business-card styling */
+/* Business card styles */
+.card-front h2 {
+	font-size: 44px;    /* Adjusted font size */
+}
+
+.card-front p {
+	font-size: 34px;    /* Adjusted font size */
+}
+
+.card-back h3 {
+	font-size: 38px;    /* Adjusted font size */
+}
+
+.card-back p {
+	font-size: 32px;    /* Adjusted font size */
+}
+
+.business-card-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	perspective: 1000px;
+	margin: 20px 0;
+  }
+  
+  .business-card {
+	position: relative;
+	width: 400px;
+	height: 500px;
+	transform-style: preserve-3d;
+	transition: transform 1500ms;
+	cursor: pointer;
+  }
+  
+  .business-card:hover {
+	cursor: pointer;
+	transform: rotateY(180deg);
+	transition: transform 1500ms;
+  }
+  
+  .card-front,
+  .card-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	border-radius: 1rem;
+	padding: 30px;
+	box-shadow: 0 0 25px rgba(9, 255, 0, 0.3);
+	background: linear-gradient(45deg, var(--primary-color) 0%, var(--background-color) 50%, var(--secondary-color) 100%);
+  }
+  
+  .card-back {
+	transform: rotateY(180deg);
+	background: linear-gradient(135deg, var(--secondary-color) 0%, var(--background-color) 50%, var(--primary-color) 100%);
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+  
+  /* Glowing border effect */
+  .business-card::before {
+	content: "";
+	position: absolute;
+	inset: -5px;
+	/* Rainbow gradient */
+	background: linear-gradient(
+	  45deg,
+	Var(--rainbowR-color),
+	Var(--rainbowO-color),
+	Var(--rainbowY-color),
+	Var(--rainbowG-color),
+	Var(--rainbowI-color),
+	Var(--rainbowB-color),
+	var(--rainbowV-color)
+	);
+	z-index: -1;
+	border-radius: 20px;
+	animation: glow 10s linear infinite;
+	background-size: 500%;
+  }
+  
+  @keyframes glow {
+	0% {
+	  background-position: 0 0;
+	}
+	100% {
+	  background-position: 500% 0;
+	}
+  }
+  
+  .contact-info p:hover {
+	color: var(--anotherB-color);
+	transform: translateX(10px);
+	transition: transform 1500ms;
+  }
+  
+  /* Adjust profile image for card */
+  .business-card .profile-image {
+	width: 150px;
+	height: 150px;
+	border: 3px solid var(--secondary-color);
+  }
