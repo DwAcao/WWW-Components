@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: var(--varTextcol);
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --varBckgrdcol: #b7b7b7 ;
+    --varBoxcol: #002aa3;
+    --varTextcol: #f97807;
+}
+
+/* Basic Styling */
+.grid-container {
+    display: grid;
+    grid-template-columns: 150px 100px 100px; /* As per video example */
+    gap: 10px;
+    background-color: var(--varBckgrdcol);
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: var(--varBoxcol);
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+/* grid-template-rows Example */
+.grid-container-rows {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 100px 200px; /* As per video example */
+    gap: 10px;
+    background-color: var(--varBckgrdcol);
+    padding: 10px;
+    height: 600px;
+}
+
+/* minmax() Function Example */
+.grid-container-minmax {
+    display: grid;
+    grid-template-columns: minmax(100px, auto) 1fr 1fr; /* As per video example */
+    gap: 10px;
+    background-color: var(--varBckgrdcol);
+    padding: 10px;
+}
+
+/* repeat() Function Example */
+.grid-container-repeat {
+    display: grid;
+    grid-template-columns: repeat(3, 150px); /* As per video example */
+    grid-template-rows: repeat(2, 150px); /* As per video example */
+    gap: 10px;
+    background-color: var(--varBckgrdcol);
+    padding: 10px;
+}
+
+/* Fraction Unit (fr) Example */
+.grid-container-fraction {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr; /* As per video example */
+    gap: 10px;
+    background-color: var(--varBckgrdcol);
+    padding: 10px;
+}
+
+/* Grid Gaps Example */
+.grid-container-gaps {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px; /*grid-row-gap: 50px; grid-column-gap: 50px; */ /* As per video example */
+    background-color: var(--varBckgrdcol);
+    padding: 10px;
+}
+
+/* Align Items Example */
+.grid-container-align {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    background-color: var(--varBckgrdcol);
+    padding: 10px;
+    height: 300px;
+    align-items: center; /* Try other values like start, end, stretch */
+    justify-content: space-around; /* Try other values like start, end, stretch */
+}
+
+/* Positioning Items (grid-column, grid-row) */
+.grid-container-position {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    background-color: var(--varBckgrdcol);
+    padding: 10px;
+}
+
+.item1 {
+    grid-column: 1 / 4; /* Span all columns */
+}
+
+.item2 {
+    grid-row: 2 / 6; /* Span multiple rows */
+}
+
+/* Grid Area Example */
+.grid-container-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+        "header header header header"
+        "nav    main   main   aside"
+        "nav    main   main   aside"
+        "footer footer footer footer";
+    gap: 10px;
+    background-color: var(--varBckgrdcol);
+    padding: 10px;
+    height: 500px;
+}
+
+.header {
+    grid-area: header;
+}
+
+.nav {
+    grid-area: nav;
+}
+
+.main {
+    grid-area: main;
+}
+
+.aside {
+    grid-area: aside;
+}
+
+.footer {
+    grid-area: footer;
+}
